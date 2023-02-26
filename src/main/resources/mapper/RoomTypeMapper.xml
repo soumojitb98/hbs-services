@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hbs.repository.RoomTypeRepo">
+
+    <resultMap id="roomType" type="com.hbs.model.RoomType">
+        <id column="id" property="id"/>
+        <result column="type" property="type"/>
+        <result column="price" property="price"/>
+    </resultMap>
+
+    <select id="getRoomType" parameterType="java.lang.String" resultMap="roomType">
+        SELECT id, type, price FROM hbs.room_type_tbl where type=#{type};
+    </select>
+
+</mapper>
+
+
+

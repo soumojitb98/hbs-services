@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hbs.repository.CustomerRepo">
+
+    <resultMap id="fetchCustomer" type="java.lang.Integer">
+        <id column="cust_id" property="custId"/>
+    </resultMap>
+
+    <select id="getCustomerByUserName" parameterType="java.lang.String" resultMap="fetchCustomer">
+        select cust_id from hbs.customer_tbl where user_email = #{userName}
+    </select>
+
+</mapper>
