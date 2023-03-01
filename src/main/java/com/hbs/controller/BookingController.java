@@ -3,7 +3,7 @@ package com.hbs.controller;
 import com.google.gson.Gson;
 import com.hbs.io.BookingRequest;
 import com.hbs.io.BookingResponse;
-import com.hbs.service.IRoomBookingService;
+import com.hbs.service.booking.IRoomBookingService;
 import com.hbs.validators.BookingRequestValidators;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

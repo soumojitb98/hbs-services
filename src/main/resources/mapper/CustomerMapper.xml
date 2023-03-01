@@ -5,12 +5,32 @@
 
 <mapper namespace="com.hbs.repository.CustomerRepo">
 
+
     <resultMap id="fetchCustomer" type="java.lang.Integer">
         <id column="cust_id" property="custId"/>
+    </resultMap>
+
+
+    <resultMap id="fetchCustomerByEmail" type="com.hbs.model.Customer">
+        <id column="cust_id" property="custId"/>
+        <result column="user_email" property="userName"/>
+        <result column="password" property="password"/>
+        <result column="role" property="role"/>
     </resultMap>
 
     <select id="getCustomerByUserName" parameterType="java.lang.String" resultMap="fetchCustomer">
         select cust_id from hbs.customer_tbl where user_email = #{userName}
     </select>
+
+    <select id="findByEmail" parameterType="java.lang.String" resultMap="fetchCustomerByEmail">
+        select * from hbs.customer_tbl where user_email = #{email}
+    </select>
+
+    <insert id="addCustomerDetails" parameterType="com.hbs.model.Customer" useGeneratedKeys="true" keyColumn="cust_id">
+        insert into hbs.customer_tbl (user_email,password, role)
+        values
+        ( #{userName}, #{password}, #{role} )
+    </insert>
+
 
 </mapper>

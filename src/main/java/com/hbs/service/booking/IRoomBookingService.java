@@ -1,4 +1,4 @@
-package com.hbs.service;
+package com.hbs.service.booking;
 
 import com.hbs.io.BookingRequest;
 import com.hbs.io.BookingResponse;

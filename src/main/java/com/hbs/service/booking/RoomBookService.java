@@ -1,4 +1,4 @@
-package com.hbs.service;
+package com.hbs.service.booking;
 
 import com.hbs.io.BookingRequest;
 import com.hbs.io.BookingResponse;
@@ -23,7 +23,6 @@ public class RoomBookService implements IRoomBookingService {
     private RoomTypeRepo roomTypeRepo;
     @Autowired
     private RoomBookRepo roomBookRepo;
-
     @Autowired
     private CustomerRepo custRepo;
 

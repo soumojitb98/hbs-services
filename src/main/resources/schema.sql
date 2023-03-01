@@ -24,4 +24,5 @@ insert into room_type_tbl values (1,'STANDARD',2500), (2,'DELUXE',3500), (3,'COT
 CREATE TABLE customer_tbl (
 cust_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 user_email VARCHAR(100) NOT NULL,
-password CHAR(255) NOT NULL );
+password CHAR(255) NOT NULL,
+role VARCHAR(45) NOT NULL );
