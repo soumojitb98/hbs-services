@@ -1,7 +1,7 @@
 package com.hbs.service.booking;
 
-import com.hbs.io.BookingRequest;
-import com.hbs.io.BookingResponse;
+import com.hbs.io.booking.BookingRequest;
+import com.hbs.io.booking.BookingResponse;
 
 /**
  * Created By Soumojit_Basak on 25-02-2023

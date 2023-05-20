@@ -1,7 +1,7 @@
 package com.hbs.service.booking;
 
-import com.hbs.io.BookingRequest;
-import com.hbs.io.BookingResponse;
+import com.hbs.io.booking.BookingRequest;
+import com.hbs.io.booking.BookingResponse;
 import com.hbs.repository.CustomerRepo;
 import com.hbs.repository.RoomBookRepo;
 import com.hbs.repository.RoomTypeRepo;

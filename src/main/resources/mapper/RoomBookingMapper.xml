@@ -5,7 +5,7 @@
 
 <mapper namespace="com.hbs.repository.RoomBookRepo">
 
-    <resultMap id="getBooking" type="com.hbs.io.BookingResponse">
+    <resultMap id="getBooking" type="com.hbs.io.booking.BookingResponse">
         <id column="booking_Id" property="bookingId"/>
         <result column="cust_email" property="custEmail"/>
         <result column="cust_num" property="noOfCustomers"/>

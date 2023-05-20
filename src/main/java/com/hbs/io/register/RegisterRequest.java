@@ -1,4 +1,4 @@
-package com.hbs.io;
+package com.hbs.io.register;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

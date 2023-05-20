@@ -1,9 +1,9 @@
 package com.hbs.controller;
 
 import com.google.gson.Gson;
-import com.hbs.io.AuthenticationRequest;
-import com.hbs.io.AuthenticationResponse;
-import com.hbs.io.RegisterRequest;
+import com.hbs.io.auth.AuthenticationRequest;
+import com.hbs.io.auth.AuthenticationResponse;
+import com.hbs.io.register.RegisterRequest;
 import com.hbs.service.authentication.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

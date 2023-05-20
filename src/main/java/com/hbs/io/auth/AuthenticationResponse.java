@@ -1,4 +1,4 @@
-package com.hbs.io;
+package com.hbs.io.auth;
 
 import lombok.*;
 

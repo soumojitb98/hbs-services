@@ -1,8 +1,7 @@
 package com.hbs.repository;
 
-import com.hbs.io.BookingResponse;
+import com.hbs.io.booking.BookingResponse;
 
-import java.sql.Date;
 import java.util.Map;
 
 /**

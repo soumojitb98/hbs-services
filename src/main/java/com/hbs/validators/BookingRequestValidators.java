@@ -1,6 +1,6 @@
 package com.hbs.validators;
 
-import com.hbs.io.BookingRequest;
+import com.hbs.io.booking.BookingRequest;
 import io.micrometer.common.util.StringUtils;
 
 import java.sql.Date;

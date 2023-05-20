@@ -1,8 +1,8 @@
 package com.hbs.service.authentication;
 
-import com.hbs.io.AuthenticationRequest;
-import com.hbs.io.AuthenticationResponse;
-import com.hbs.io.RegisterRequest;
+import com.hbs.io.auth.AuthenticationRequest;
+import com.hbs.io.auth.AuthenticationResponse;
+import com.hbs.io.register.RegisterRequest;
 import com.hbs.model.Customer;
 import com.hbs.repository.CustomerRepo;
 import com.hbs.security.JwtService;
