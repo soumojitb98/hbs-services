@@ -42,6 +42,8 @@ public class AuthenticationService {
         log.info("Encoded Password : " + passwordEncoder.encode(request.getPassword()));
 
         Customer customer = new Customer();
+        customer.setFirstName(request.getFirstName());
+        customer.setLastName(request.getLastName());
         customer.setUserName(request.getEmail());
         customer.setPassword(passwordEncoder.encode(request.getPassword()));
         customer.setRole(request.getRole());

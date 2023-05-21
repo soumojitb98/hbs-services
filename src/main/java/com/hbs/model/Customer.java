@@ -16,6 +16,8 @@ import java.util.List;
 @Setter
 public class Customer implements UserDetails {
     private Integer custId;
+    private String firstName;
+    private String lastName;
     private String userName;
     private String password;
     private String role;
