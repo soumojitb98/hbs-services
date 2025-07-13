@@ -17,14 +17,14 @@
     <select id="getBookingDetails" parameterType="java.util.Map" resultMap="getBooking" >
         select B.booking_id, C.user_email as cust_email, B.cust_num, R.type as room_type, B.check_In, B.check_out
         from
-        hbs.room_book_tbl as B join hbs.room_type_tbl as R on B.room_type_id = R.id
-        join hbs.customer_tbl as C on B.cust_id = C.cust_id
+        room_book_tbl as B join room_type_tbl as R on B.room_type_id = R.id
+        join customer_tbl as C on B.cust_id = C.cust_id
         where C.user_email = #{custEmail} and  B.check_In = #{checkInDate} and B.check_Out = #{checkOutDate}
         and B.room_type_id = #{roomTypeId}
     </select>
 
-    <insert id="addBookingDetails" parameterType="java.util.Map" useGeneratedKeys="true" keyColumn="booking_Id" >
-        insert into hbs.room_book_tbl ( cust_id, cust_num, check_In, check_out, no_Of_Rooms, room_type_id )
+    <insert id="addBookingDetails" parameterType="java.util.Map" useGeneratedKeys="true" keyColumn="booking_id" >
+        insert into room_book_tbl ( cust_id, cust_num, check_In, check_out, no_Of_Rooms, room_type_id )
         values ( #{customerId}, #{noOfCustomers}, #{checkInDate}, #{checkOutDate}, #{noOfRooms},  #{roomTypeId} )
     </insert>
 

@@ -12,7 +12,7 @@
     </resultMap>
 
     <select id="getRoomType" parameterType="java.lang.String" resultMap="roomType">
-        SELECT id, type, price FROM hbs.room_type_tbl where type=#{type};
+        SELECT id, type, price FROM room_type_tbl where type=#{type};
     </select>
 
 </mapper>

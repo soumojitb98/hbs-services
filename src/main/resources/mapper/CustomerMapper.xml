@@ -19,15 +19,15 @@
     </resultMap>
 
     <select id="getCustomerByUserName" parameterType="java.lang.String" resultMap="fetchCustomer">
-        select cust_id from hbs.customer_tbl where user_email = #{userName}
+        select cust_id from customer_tbl where user_email = #{userName}
     </select>
 
     <select id="findByEmail" parameterType="java.lang.String" resultMap="fetchCustomerByEmail">
-        select * from hbs.customer_tbl where user_email = #{email}
+        select * from customer_tbl where user_email = #{email}
     </select>
 
     <insert id="addCustomerDetails" parameterType="com.hbs.model.Customer" useGeneratedKeys="true" keyColumn="cust_id">
-        insert into hbs.customer_tbl (first_name, last_name , user_email,password, role)
+        insert into customer_tbl (first_name, last_name , user_email,password, role)
         values
         ( #{firstName}, #{lastName}, #{userName}, #{password}, #{role} )
     </insert>
